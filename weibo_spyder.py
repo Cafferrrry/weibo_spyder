@@ -115,7 +115,7 @@ class Weibo_spyder():
             pass
         Types = self.getType(content_node)
         try:
-            approve = str(p.xpath("descendant::div[@class='feed_content wbcon']/a[@class='W_icon icon_approve_co']/@alt")[0])
+            approve = str(p.xpath("descendant::div[@class='feed_content wbcon']/a/@alt")[0])
         except:
             approve = str('微博普通用户')
             pass
